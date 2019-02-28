@@ -89,12 +89,12 @@ class Home extends Component {
 
     ColorUpdate = (stock) => {
         if(stock.history.slice(-2)[0].price > stock.current_price){
-            return <span className="icon-color-red">{stock.current_price}</span>
+            return <span className="icon-color-red">{stock.current_price.toFixed(2)}</span>
         }else if(stock.history.slice(-2)[0].price < stock.current_price) {
-            return <span className="icon-color-green">{stock.current_price}</span>
+            return <span className="icon-color-green">{stock.current_price.toFixed(2)}</span>
         }else if(stock.history.slice(-2)[0].price === stock.current_price) {
-            return <span>{stock.current_price}</span>
-        }else {return <span>{stock.current_price}</span>}
+            return <span>{stock.current_price.toFixed(2)}</span>
+        }else {return <span>{stock.current_price.toFixed(2)}</span>}
     }
 
     handleClickOpen = (key, stock) => {
@@ -121,7 +121,7 @@ class Home extends Component {
                     aria-labelledby="draggable-dialog-title"
                     fullWidth={true}
                     >
-                    <DialogTitle id="draggable-dialog-title">{this.state.tickerKey}</DialogTitle>
+                    <DialogTitle id="draggable-dialog-title">{this.state.tickerKey.toUpperCase()}</DialogTitle>
                     <DialogContent>
                         <CanvasGraph stock={this.state.canvasStock} stockKey={this.state.tickerKey}/>
                     </DialogContent>
@@ -136,7 +136,7 @@ class Home extends Component {
                             <thead>
                                 <tr>
                                     <th>TICKER</th>
-                                    <th>PRICE</th>
+                                    <th>PRICE($)</th>
                                     <th>LAST UPDATE</th>
                                     <th>STATUS</th>
                                 </tr>
@@ -146,7 +146,7 @@ class Home extends Component {
                                     this.state.stocks !== null && this.state.stocks !== undefined && (
                                         Object.keys(this.state.stocks).map((key, index) => (
                                             <tr key={index} onClick={() => this.handleClickOpen(key, this.state.stocks[key])}>
-                                                <td>{key}</td>
+                                                <td>{key.toUpperCase()}</td>
                                                 <td>
                                                     {this.ColorUpdate(this.state.stocks[key])}
                                                     {this.ArrowUpdate(this.state.stocks[key])}

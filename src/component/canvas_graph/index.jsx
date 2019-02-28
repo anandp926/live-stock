@@ -23,7 +23,7 @@ export default class Graph extends Component {
             options = {
                 theme: "light2",
                 title: {
-                    text: `Stock Price of ${this.props.stockKey}`
+                    text: `Stock Price of ${this.props.stockKey.toUpperCase()}`
                 },
                 axisY: {
                     title: "Price in USD",
