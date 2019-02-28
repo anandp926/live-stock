@@ -1,0 +1,62 @@
+.homes-container {
+    width: 100%;
+    display: flex;
+    background: #fff;
+    padding: 1rem 1rem;
+}
+
+.home-table table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+.home-table th {
+    color: #3F51B5;
+}
+
+.home-table td {
+    color: #565859;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.home-table th, td {
+    text-align: left;
+    padding: 11px;
+    border: 1px solid #ddd;
+}
+
+.icon-color-red {
+    color: red;
+    size: 11px; 
+}
+
+.icon-color-green {
+    color: green;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.home-table tr:nth-child(even){background-color: #f2f2f2}
+
+.home-table tbody tr:hover {
+    background-color: #E6F7FF;
+    cursor: pointer;
+}
+
+.hideMe {
+    -webkit-animation: cssAnimation 0s ease-in 1s forwards; 
+    animation: cssAnimation 0s ease-in 1s forwards;
+}
+@keyframes cssAnimation {
+    0%   {opacity: 1;}
+    90%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+@-webkit-keyframes cssAnimation {
+    0%   {opacity: 1;}
+    90%  {opacity: 1;}
+    100% {opacity: 0;}
+}
