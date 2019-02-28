@@ -32,7 +32,8 @@ class Home extends Component {
         canvasStock: [],
         loader: true
     }
-
+    
+// socket connection
     webSocketCall = () => {
         window.WebSocket = window.WebSocket || window.MozWebSocket;
 
@@ -79,6 +80,7 @@ class Home extends Component {
         this.webSocketCall();
     }
 
+// arror updation
     ArrowUpdate = (stock) => {
         if(stock.history.slice(-2)[0].price > stock.current_price){
             return <ArrowDropDown className="icon-color-red hideMe" fontSize="large" />
@@ -87,6 +89,7 @@ class Home extends Component {
         }else {return null}
     }
 
+// price coolor updation
     ColorUpdate = (stock) => {
         if(stock.history.slice(-2)[0].price > stock.current_price){
             return <span className="icon-color-red">{stock.current_price.toFixed(2)}</span>
@@ -97,6 +100,7 @@ class Home extends Component {
         }else {return <span>{stock.current_price.toFixed(2)}</span>}
     }
 
+// dialog open
     handleClickOpen = (key, stock) => {
         this.setState({ open: true, tickerKey: key, canvasStock: stock });
     };
