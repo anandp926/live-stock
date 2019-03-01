@@ -1,5 +1,10 @@
 Open [http://live-stock.herokuapp.com/](http://live-stock.herokuapp.com/) to view it in the browser.
 
+## Features
+
+1. dragable dialog of graph
+2. onclick row get graph history
+
 ## Available Scripts
 
 ## Installations Steps:
