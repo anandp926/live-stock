@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Open [http://live-stock.herokuapp.com/](http://live-stock.herokuapp.com/) to view it in the browser.
 
 ## Available Scripts
 
