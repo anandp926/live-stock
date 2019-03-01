@@ -2,9 +2,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-In the project directory, you can run:
+## Installations Steps:
 
-### `clone this application, cd/live-stock $ npm install`
+1. Clone Repo `git clone https://github.com/anandp926/live-stock.git`
+
+2. Go to Folder  `cd live-stock`
+
+3. Install packages `npm install`.
+
+
+In the project directory, you can run:
 
 ### `npm run start`
 
