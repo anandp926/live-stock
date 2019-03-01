@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/live-stock/static/css/main.a5ecb43e.chunk.css"
   },
   {
-    "revision": "3bbdc72220b1c9e9016ab2c8586a6335",
+    "revision": "82f7edc1644e62e40f640c4048baf3ad",
     "url": "/live-stock/index.html"
   }
 ];
